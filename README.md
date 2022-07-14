@@ -183,7 +183,7 @@ a_amount,
 pub  fn  swap_from_b(&mut  self, amount: Balance);
 ```
 **Owner Deposit Function** 
-In this process， $X/Y$ ratio is constant and $K$ will be changed.
+In this process, $K$ will be recalculated. And ratio of $X/Y$ ratio will also be changed.
 ```rust
 #[payable]
 pub  fn  deposit_a_by_owner(&mut  self, amount: Balance)
